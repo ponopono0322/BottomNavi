@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.zxing.integration.android.IntentIntegrator;
+
 public class SubActivity extends AppCompatActivity {
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -55,7 +57,7 @@ public class SubActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SubActivity.this,CustomScannerActivity.class));
+                new IntentIntegrator(SubActivity.this).initiateScan();
             }
         });
     }
