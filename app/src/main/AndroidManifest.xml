@@ -18,7 +18,12 @@
         </activity>
         <activity
             android:name=".SubActivity"
-            android:label="@string/title_activity_sub"></activity>
+            android:label="@string/title_activity_sub"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
     </application>
 
 </manifest>
