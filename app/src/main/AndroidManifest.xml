@@ -18,12 +18,17 @@
         </activity>
         <activity
             android:name=".SubActivity"
-            android:label="@string/title_activity_sub"
+            android:label="@string/title_activity_sub">
+        </activity>
+        <activity
+            android:name=".AnyOrientationCaptureActivity"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
 
-        </activity>
+        <activity android:name=".CustomScannerActivity"></activity>
+
     </application>
 
 </manifest>
